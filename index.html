@@ -1,47 +1,359 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <meta name="description" content="">
-        <meta name="author" content="">
-        <title>Cover Template for Bootstrap</title>
-        <!-- Bootstrap core CSS -->
-        <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
-        <!-- Custom styles for this template -->
-        <link href="cover.css" rel="stylesheet">
-    </head>
-    <body>
-        <div class="site-wrapper">
-            <div class="site-wrapper-inner">
-                <div class="cover-container">
-                    <div class="masthead clearfix">
-                        <div class="inner">
-                            <nav class="float-none nav nav-masthead">
-                                <a class="active nav-link" href="#">Inicio</a>
-                                <a class="nav-link" href="presskit.html">Press kit</a>
-                                <a class="nav-link" href="#">Integrantes</a>
-                            </nav>
+<html lang="en" class="has-navbar-fixed-top">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Concordia | Sitio Oficial</title>
+    <link rel="shortcut icon" href="./assets/logos/logoq_blanco.png" type="image/x-icon">
+    <!-- Bulma Version 0.9.0-->
+    <link rel="stylesheet" href="https://unpkg.com/bulma@0.9.0/css/bulma.min.css" />
+    <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js"></script>
+</head>
+
+<body>
+    <nav class="navbar is-white is-fixed-top" >
+        <div class="navbar-brand">
+            <a class="navbar-item" href="https://bulma.io">
+                <img src="./assets/logos/logo2_blanco.png" alt="Concordia logo" style="max-height: 80px;">
+            </a>
+            <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+
+        <div id="navbarExampleTransparentExample" class="navbar-menu">
+            <div class="navbar-start">
+                <a class="navbar-item" href="index.html#">
+                    Principal
+                </a>
+                <a class="navbar-item" href="musica.html">
+                    Música
+                </a>
+                <a class="navbar-item" href="presskit.html">
+                    Press kit
+                </a>
+                <a class="navbar-item" href="index.html#contacto">
+                    Contacto
+                </a>
+                <!--- Navbar contenido desplegable
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link" href="/documentation/overview/start/">
+                        More
+                    </a>
+                    <div class="navbar-dropdown is-boxed">
+                        <a class="navbar-item" href="/documentation/overview/start/">
+                            Mechandise
+                        </a>
+                        <a class="navbar-item" href="https://bulma.io/documentation/modifiers/syntax/">
+                            Extras
+                        </a>
+                        <a class="navbar-item" href="https://bulma.io/documentation/columns/basics/">
+                            Media
+                        </a>
+                    </div>
+                </div>
+              -->
+            </div>
+
+            
+        </div>
+    </nav>
+
+    <section class="hero">
+        <figure class="image">
+            <img src="./assets/banda/concordia_hero.JPG">
+        </figure>
+    </section>
+
+    <section class="section">
+        <div class="container has-text-centered">
+            <h2 class="title"><i>"Somos la Concordia"</i></h2>
+            <p style="text-align: justify">
+              Para nosotros como banda, la armonía es la esencia con la que nos identificamos. Está presente en todo 
+              momento en nuestro quehacer musical, así como en el día a día cuando navegamos en esta dimensión de múltiples 
+              interpretaciones. Sin importar el sentimiento que gobierne cualquiera de nuestras canciones, existe siempre esa armonía 
+              que funge como el componente que le da coherencia a lo que buscamos expresar.
+              <br>
+              Estamos convencidos del poder intrínseco que tiene la música de inspirar diversos estados de ánimo, y nuestras canciones 
+              tratan justamente de eso, de compartir una experiencia o una emoción que nos es muy familiar o, por el contrario, 
+              extrañamente desconocida.
+            </p>
+
+            <div class="columns" style="padding: 2rem">
+                <div class="column">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image is-2by2">
+                                <img src="./assets/members/zept_prof.jpg" alt="Dany Zept">
+                            </figure>
                         </div>
-                        <img src="assets/logo2_trans.png" width="92%" class="float-none rounded-0" style="margin-bottom: 25px;">
-                        <div class="font-weight-bold text-danger">
-                            <h2>Este sitio se encuentra actualmente en construcción. Mientras tanto puedes acceder a nuestro press kit desde el menú de arriba.</h2>
+                        <div class="card-content">
+                            <div class="media">
+                                <div class="media-content">
+                                    <p class="title is-4">Dany Zept</p>
+                                    <p class="subtitle is-6">Un chico con sombrero</p>
+                                </div>
+                            </div>
+
+                            <div class="content" style="text-align: center">
+                                Él solo es un chico con sombrero.
+                                <a href="https://www.instagram.com/dany_zept/">@dany_zept</a>
+                                
+                            </div>
                         </div>
                     </div>
-                    <div class="inner cover">
-                        <p class="lead"> </p>
+                </div>
+                <div class="column">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image is-2by2">
+                                <img src="./assets/members/mrxs_prof.jpg" alt="Mr. XS">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <div class="media">
+                                <div class="media-content">
+                                    <p class="title is-4">Mr. XS</p>
+                                    <p class="subtitle is-6">El Caballero/La Bestia</p>
+                                </div>
+                            </div>
+
+                            <div class="content" style="text-align: center">
+                                Él tiene una dupla en su ser.
+                                <a href="https://www.instagram.com/leoraptor_xs/">@leoraptor_xs</a>                              
+                            </div>
+                        </div>
                     </div>
-                    <div class="mastfoot">
-</div>
+                </div>
+                <div class="column">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image is-2by2">
+                                <img src="./assets/members/oleos_prof.jpg" alt="Óleos">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <div class="media">
+                                <div class="media-content">
+                                    <p class="title is-4">Óleos</p>
+                                    <p class="subtitle is-6">Basura brillante</p>
+                                </div>
+                            </div>
+
+                            <div class="content">
+                                Él tiene unas máscaras muy chidas.
+                                <a href="https://www.instagram.com/oleos_mx/">@oleos_mx</a>                                
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="column">
+                  <div class="card">
+                      <div class="card-image">
+                          <figure class="image is-2by2">
+                              <img src="./assets/members/fer_prof.jpg" alt="Fer Nava">
+                          </figure>
+                      </div>
+                      <div class="card-content">
+                          <div class="media">
+                              <div class="media-content">
+                                  <p class="title is-4">Fer Nava</p>
+                                  <p class="subtitle is-6">Fernando</p>
+                              </div>
+                          </div>
+
+                          <div class="content">
+                              Él es Fer Nava.
+                              <a href="https://www.instagram.com/fernand0nava/">@fernand0nava</a>                              
+                          </div>
+                      </div>
+                  </div>
+                                    
+              </div>
+              <div class="column">
+                <div class="card">
+                    <div class="card-image">
+                        <figure class="image is-2by2">
+                            <img src="./assets/members/dinodog_prof.jpg" alt="Cosmic Dinodog">
+                        </figure>
+                    </div>
+                    <div class="card-content">
+                        <div class="media">
+                            <div class="media-content">
+                                <p class="title is-4">Cosmic Dinodog</p>
+                                <p class="subtitle is-6">Materia cósmica</p>
+                            </div>
+                        </div>
+
+                        <div class="content">
+                            Cósmico.
+                            <a href="https://www.instagram.com/cosmicdinodog/">@cosmicdinodog</a>                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!--  Tour section
+    <section class="section">
+        <div class="container has-text-centered">
+            <h2 class="title">Tour Dates</h2>
+
+            <div class="tile is-ancestor">
+                <div class="tile is-parent">
+                    <article class="tile is-child box">
+                        <figure class="image">
+                            <img src="https://images.pexels.com/photos/374710/pexels-photo-374710.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260">
+                        </figure>
+                        <p class="title">New York</p>
+                        <p class="subtitle">Fri 27 Nov 2016</p>
+                        <a class="button">Buy Tickets</a>
+                    </article>
+                </div>
+                <div class="tile is-parent">
+                    <article class="tile is-child box">
+                        <figure class="image">
+                            <img src="https://images.pexels.com/photos/374710/pexels-photo-374710.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260">
+                        </figure>
+                        <p class="title">New York</p>
+                        <p class="subtitle">Fri 27 Nov 2016</p>
+                        <a class="button">Buy Tickets</a>
+                    </article>
+                </div>
+                <div class="tile is-parent">
+                    <article class="tile is-child box">
+                        <figure class="image">
+                            <img src="https://images.pexels.com/photos/374710/pexels-photo-374710.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260">
+                        </figure>
+                        <p class="title">New York</p>
+                        <p class="subtitle">Fri 27 Nov 2016</p>
+                        <a class="button">Buy Tickets</a>
+                    </article>
+                </div>
+                <div class="tile is-parent">
+                    <article class="tile is-child box">
+                        <figure class="image">
+                            <img src="https://images.pexels.com/photos/374710/pexels-photo-374710.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260">
+                        </figure>
+                        <p class="title">New York</p>
+                        <p class="subtitle">Fri 27 Nov 2016</p>
+                        <a class="button">Buy Tickets</a>
+                    </article>
+                </div>
+                <div class="tile is-parent">
+                    <article class="tile is-child box">
+                        <figure class="image">
+                            <img src="https://images.pexels.com/photos/374710/pexels-photo-374710.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260">
+                        </figure>
+                        <p class="title">New York</p>
+                        <p class="subtitle">Fri 27 Nov 2016</p>
+                        <a class="button">Buy Tickets</a>
+                    </article>
+                </div>
+            </div>
+
+            <div class="tile is-ancestor">
+                <div class="tile is-parent">
+                    <article class="tile is-child box">
+                        <figure class="image">
+                            <img src="https://images.pexels.com/photos/374710/pexels-photo-374710.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260">
+                        </figure>
+                        <p class="title">New York</p>
+                        <p class="subtitle">Fri 27 Nov 2016</p>
+                        <a class="button">Buy Tickets</a>
+                    </article>
+                </div>
+                <div class="tile is-parent">
+                    <article class="tile is-child box">
+                        <figure class="image">
+                            <img src="https://images.pexels.com/photos/374710/pexels-photo-374710.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260">
+                        </figure>
+                        <p class="title">New York</p>
+                        <p class="subtitle">Fri 27 Nov 2016</p>
+                        <a class="button">Buy Tickets</a>
+                    </article>
+                </div>
+                <div class="tile is-parent">
+                    <article class="tile is-child box">
+                        <figure class="image">
+                            <img src="https://images.pexels.com/photos/374710/pexels-photo-374710.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260">
+                        </figure>
+                        <p class="title">New York</p>
+                        <p class="subtitle">Fri 27 Nov 2016</p>
+                        <a class="button">Buy Tickets</a>
+                    </article>
+                </div>
+                <div class="tile is-parent">
+                    <article class="tile is-child box">
+                        <figure class="image">
+                            <img src="https://images.pexels.com/photos/374710/pexels-photo-374710.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260">
+                        </figure>
+                        <p class="title">New York</p>
+                        <p class="subtitle">Fri 27 Nov 2016</p>
+                        <a class="button">Buy Tickets</a>
+                    </article>
+                </div>
+                <div class="tile is-parent">
+                    <article class="tile is-child box">
+                        <figure class="image">
+                            <img src="https://images.pexels.com/photos/374710/pexels-photo-374710.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260">
+                        </figure>
+                        <p class="title">New York</p>
+                        <p class="subtitle">Fri 27 Nov 2016</p>
+                        <a class="button">Buy Tickets</a>
+                    </article>
                 </div>
             </div>
         </div>
-        <!-- Bootstrap core JavaScript
-    ================================================== -->
-        <!-- Placed at the end of the document so the pages load faster -->
-        <script src="assets/js/jquery.min.js"></script>
-        <script src="assets/js/popper.js"></script>
-        <script src="bootstrap/js/bootstrap.min.js"></script>
-    </body>
+    </section>
+
+  -->
+
+    <section class="section" id="contacto">
+        <div class="container has-text-centered">
+            <h2 class="title">Contáctanos</h2>
+            <span class="icon is-small is-left">
+              <i class="fas fa-envelope"></i>
+          </span>
+            <p>Correo electrónico: <a href="mailto:somoslaconcordiamx@gmail.com">somoslaconcordiamx@gmail.com</a></p>
+
+            
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="content has-text-centered">
+                <p>
+                    <a href="https://www.facebook.com/laconcordia.music/">
+                        <i class="fab fa-facebook-square fa-2x"></i>
+                    </a>
+                    <a href="https://twitter.com/weareconcordia">
+                        <i class="fab fa-twitter-square fa-2x"></i>
+                    </a>
+                    <a href="https://www.instagram.com/laconcordia_music/">
+                        <i class="fab fa-instagram fa-2x"></i>
+                    </a>
+                    
+                </p>
+                <p>
+                    <a href="https://bulma.io">
+                        <img src="https://bulma.io/images/made-with-bulma.png" alt="Made with Bulma" width="128" height="24">
+                    </a>
+                </p>
+                
+            </div>
+        </div>
+    </footer>
+        <script src="../js/bulma.js"></script>
+</body>
+
 </html>
