@@ -92,31 +92,31 @@
             <ul>
                 <li class="tab is-active" onclick="openTab(event,'Bio')">
                     <a>
-                        <span class="icon is-small"><i class="fas fa-image" aria-hidden="true"></i></span>
+                        <span class="icon is-small"><i class="fas fa-star" aria-hidden="true"></i></span>
                         <span>Biografía</span>
                     </a>
                 </li>
                 <li class="tab" onclick="openTab(event,'Member')">
                     <a>
-                        <span class="icon is-small"><i class="fas fa-music" aria-hidden="true"></i></span>
+                        <span class="icon is-small"><i class="fas fa-user" aria-hidden="true"></i></span>
                         <span>Integrantes</span>
                     </a>
                 </li>
                 <li class="tab" onclick="openTab(event,'Music')">
                     <a>
-                        <span class="icon is-small"><i class="fas fa-film" aria-hidden="true"></i></span>
+                        <span class="icon is-small"><i class="fas fa-music" aria-hidden="true"></i></span>
                         <span>Música</span>
                     </a>
                 </li>
                 <li class="tab" onclick="openTab(event,'Media')">
                     <a>
-                        <span class="icon is-small"><i class="far fa-file-alt" aria-hidden="true"></i></span>
+                        <span class="icon is-small"><i class="far fa-image" aria-hidden="true"></i></span>
                         <span>Imágenes y videos</span>
                     </a>
                 </li>
                 <li class="tab" onclick="openTab(event,'Rider')">
                     <a>
-                        <span class="icon is-small"><i class="far fa-file-alt" aria-hidden="true"></i></span>
+                        <span class="icon is-small"><i class="fas fa-list-alt" aria-hidden="true"></i></span>
                         <span>Rider técnico</span>
                     </a>
                 </li>
@@ -172,13 +172,71 @@
                 
             </div>
             <div id="Member" class="content-tab" >
-                <h3>Integrantes, hijo de su</h3>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis odio eveniet aperiam minus temporibus. Nulla molestias iusto odit quisquam? Obcaecati, optio omnis! Suscipit ex beatae perspiciatis nesciunt iste excepturi repellendus.
+                <p class="title is-5" style="text-align: center;">
+                    <i>Los que conformamos este proyecto...</i>
                 </p>
+                <p>
+                    Uno de los elementos que definen la imagen de nuestra banda es la caracterización de cada uno de los integrantes 
+                    por medio de su nombre de artista o <i>alter ego</i>. Deseamos llevar esta expresión incluso en nuestras presentaciones, ya que así nos 
+                    podemos mostrar con mayor autenticidad, dando a conocer al público nuestra verdadera esencia.
+                    A continuación les presentamos una descripción de quiénes somos y qué hacemos.
+                </p>
+                <br>
+                <p style="text-align: center;"><i>(Clic en cada botón para desplegar la información del integrante)</i></p>
+                <div class="columns" style="padding-top: 30px; text-align: center;">
+                    <div class="column">
+                        <button>
+                            <img src="./assets/iconos/mrxs_ico.png" width="100px" height="100px">
+                            <p class="title is-6">Dany Zept</p>
+                        </button>
+                    </div>
+                    <div class="column">
+                        <button>
+                            <img src="./assets/iconos/mrxs_ico.png" width="100px" height="100px">
+                            <p class="title is-6">Mr. XS</p>
+                        </button>
+                    </div>
+                    <div class="column">
+                        <button>
+                            <img src="./assets/iconos/oleos_ico.png" width="100px" height="100px">
+                            <p class="title is-6">Óleos</p>
+                        </button>                
+                    </div>
+                    <div class="column">
+                        <button>
+                            <img src="./assets/iconos/oleos_ico.png" width="100px" height="100px">
+                            <p class="title is-6">Fer Nava</p>
+                        </button>                
+                    </div>
+                    <div class="column">
+                        <button>
+                            <img src="./assets/iconos/oleos_ico.png" width="100px" height="100px">
+                            <p class="title is-6">Cosmic Dinodog</p>
+                        </button>                
+                    </div>
+                
+                </div>
+                
             </div>
 
         </div>
+
+        <div class="modal">
+            <div class="modal-background"></div>
+            <div class="modal-card">
+              <header class="modal-card-head">
+                <p class="modal-card-title">Modal title</p>
+                <button class="delete" aria-label="close"></button>
+              </header>
+              <section class="modal-card-body">
+                <!-- Content ... -->
+              </section>
+              <footer class="modal-card-foot">
+                <button class="button is-success">Save changes</button>
+                <button class="button">Cancel</button>
+              </footer>
+            </div>
+          </div>
     
 
 
