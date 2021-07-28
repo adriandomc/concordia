@@ -185,34 +185,44 @@
                 <p style="text-align: center;"><i>(Clic en cada botón para desplegar la información del integrante)</i></p>
                 <div class="columns" style="padding-top: 30px; text-align: center;">
                     <div class="column">
+                        <a onclick="openModal(event,'modal_zept')">
                         <button>
                             <img src="./assets/iconos/mrxs_ico.png" width="100px" height="100px">
                             <p class="title is-6">Dany Zept</p>
                         </button>
+                        </a>
                     </div>
                     <div class="column">
+                        <a onclick="openModal(event,'modal_mrxs')">
                         <button>
                             <img src="./assets/iconos/mrxs_ico.png" width="100px" height="100px">
                             <p class="title is-6">Mr. XS</p>
                         </button>
+                        </a>
                     </div>
                     <div class="column">
+                        <a onclick="openModal(event,'modal_oleos')">
                         <button>
                             <img src="./assets/iconos/oleos_ico.png" width="100px" height="100px">
                             <p class="title is-6">Óleos</p>
-                        </button>                
+                        </button>  
+                        </a>              
                     </div>
                     <div class="column">
+                        <a onclick="openModal(event,'modal_fer')">
                         <button>
                             <img src="./assets/iconos/oleos_ico.png" width="100px" height="100px">
                             <p class="title is-6">Fer Nava</p>
-                        </button>                
+                        </button>    
+                        </a>            
                     </div>
                     <div class="column">
+                        <a onclick="openModal(event,'modal_dino')">
                         <button>
                             <img src="./assets/iconos/oleos_ico.png" width="100px" height="100px">
                             <p class="title is-6">Cosmic Dinodog</p>
                         </button>                
+                        </a>
                     </div>
                 
                 </div>
@@ -221,22 +231,133 @@
 
         </div>
 
-        <div class="modal">
+        
+        <!-- MODALS PARA PERFILES DE INTEGRANTES-->
+        
+        <!--ZEPT-->
+        <div id="modal_zept" class="modal">
             <div class="modal-background"></div>
             <div class="modal-card">
-              <header class="modal-card-head">
-                <p class="modal-card-title">Modal title</p>
-                <button class="delete" aria-label="close"></button>
-              </header>
-              <section class="modal-card-body">
-                <!-- Content ... -->
-              </section>
-              <footer class="modal-card-foot">
-                <button class="button is-success">Save changes</button>
-                <button class="button">Cancel</button>
-              </footer>
+                <header class="modal-card-head">
+                    <p class="modal-card-title">Información sobre Dany Zept</p>
+                    <a onclick="closeModal(event, 'modal_zept')">
+                        <button class="delete" aria-label="close"></button>
+                    </a>
+        
+        
+                </header>
+                <section class="modal-card-body">
+                    <!-- Content ... -->
+                </section>
+                <footer class="modal-card-foot">
+        
+                    <a onclick="closeModal(event, 'modal_zept')">
+                        <button class="button is-danger">Volver</button>
+                    </a>
+        
+                </footer>
             </div>
-          </div>
+        </div>
+
+        <!--MRXS-->
+        <div id="modal_mrxs" class="modal">
+            <div class="modal-background"></div>
+            <div class="modal-card">
+                <header class="modal-card-head">
+                    <p class="modal-card-title">Información sobre Mr. XS</p>
+                    <a onclick="closeModal(event, 'modal_mrxs')">
+                        <button class="delete" aria-label="close"></button>
+                    </a>
+        
+        
+                </header>
+                <section class="modal-card-body">
+                    <!-- Content ... -->
+                </section>
+                <footer class="modal-card-foot">
+        
+                    <a onclick="closeModal(event, 'modal_mrxs')">
+                        <button class="button is-danger">Volver</button>
+                    </a>
+        
+                </footer>
+            </div>
+        </div>
+
+        <!--OLEOS-->
+        <div id="modal_oleos" class="modal">
+            <div class="modal-background"></div>
+            <div class="modal-card">
+                <header class="modal-card-head">
+                    <p class="modal-card-title">Información sobre Óleos</p>
+                    <a onclick="closeModal(event, 'modal_oleos')">
+                        <button class="delete" aria-label="close"></button>
+                    </a>
+        
+        
+                </header>
+                <section class="modal-card-body">
+                    <!-- Content ... -->
+                </section>
+                <footer class="modal-card-foot">
+        
+                    <a onclick="closeModal(event, 'modal_oleos')">
+                        <button class="button is-danger">Volver</button>
+                    </a>
+        
+                </footer>
+            </div>
+        </div>
+
+        <!--FER-->
+        <div id="modal_fer" class="modal">
+            <div class="modal-background"></div>
+            <div class="modal-card">
+                <header class="modal-card-head">
+                    <p class="modal-card-title">Información sobre Fer Nava</p>
+                    <a onclick="closeModal(event, 'modal_fer')">
+                        <button class="delete" aria-label="close"></button>
+                    </a>
+        
+        
+                </header>
+                <section class="modal-card-body">
+                    <!-- Content ... -->
+                </section>
+                <footer class="modal-card-foot">
+        
+                    <a onclick="closeModal(event, 'modal_fer')">
+                        <button class="button is-danger">Volver</button>
+                    </a>
+        
+                </footer>
+            </div>
+        </div>
+
+        <!--DINO-->
+        <div id="modal_dino" class="modal">
+            <div class="modal-background"></div>
+            <div class="modal-card">
+                <header class="modal-card-head">
+                    <p class="modal-card-title">Información sobre Cosmic Dinodog</p>
+                    <a onclick="closeModal(event, 'modal_dino')">
+                        <button class="delete" aria-label="close"></button>
+                    </a>
+        
+        
+                </header>
+                <section class="modal-card-body">
+                    <!-- Content ... -->
+                </section>
+                <footer class="modal-card-foot">
+        
+                    <a onclick="closeModal(event, 'modal_dino')">
+                        <button class="button is-danger">Volver</button>
+                    </a>
+        
+                </footer>
+            </div>
+        </div>
     
 
 
@@ -312,5 +433,15 @@
         }
         document.getElementById(tabName).style.display = "block";
         evt.currentTarget.className += " is-active";
+    }
+
+    function openModal(evt, modalName) {
+        document.getElementById(modalName).style.display = "block";
+        evt.currentTarget.className += " is-active";
+    }
+
+    function closeModal(evt, modalName) {
+        document.getElementById(modalName).style.display = "none";
+        evt.currentTarget.className -= " is-active";        
     }
 </script>
