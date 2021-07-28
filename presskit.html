@@ -26,7 +26,7 @@
     </style>
 </head>
 
-<body onload="openTab(event,'Startup')"style="background-color: rgb(199, 216, 209)">
+<body id="whole" onload="openTab(event,'Startup')"style="background-color: rgb(199, 216, 209)">
     <nav class="navbar is-white is-fixed-top" >
         <div class="navbar-brand">
             <a class="navbar-item" href="https://somoslaconcordia.com">
@@ -235,7 +235,7 @@
         <!-- MODALS PARA PERFILES DE INTEGRANTES-->
         
         <!--ZEPT-->
-        <div id="modal_zept" class="modal">
+        <div id="modal_zept" class="modal" >
             <div class="modal-background"></div>
             <div class="modal-card">
                 <header class="modal-card-head">
@@ -248,6 +248,21 @@
                 </header>
                 <section class="modal-card-body">
                     <!-- Content ... -->
+                    <ul>
+                        <li><b>•Nombre real:</b> Daniel Ortega.</li>
+                        <li><b>•Instrumentos:</b> Bajo, guitarra, teclado y voz.</li>
+                        <li><b>•Comida favorita:</b> La morisqueta y las taquizas.</li>
+                        <li><b>•Influencia musical:</b> Mago de Oz, The Killers, The Beatles, Tame Impala y Kudasai.</li>
+                        <li><b>•Fan de:</b> Lo Fi, rock indie y pop punk.</li>
+                        <br>
+                        <p><b>Trascendencia musical:</b>
+                          <br>
+                          Comencé a tocar guitarra desde los 14 años tras la idea que componer los sonidos que se adaptaran a mi sentir. Desde ese tiempo estuve en varias 
+                          bandas fallidas hasta el 2017 dónde existió un proyecto llamado "Hey Jade!" Y posteriormente otro llamado "Dr. Fausto Fénix". 
+                          Tras el retiro de este último me dediqué a estudiar música y composición en la academia de Música y Arte de México (MyAM) un tiempo, hasta 
+                          volver con ideas más frescas y renovadas sobre composición e iniciar un nuevo proyecto con mi mejor amigo y colega "Cosmic Dinodog".
+                        </p>
+                      </ul>
                 </section>
                 <footer class="modal-card-foot">
         
@@ -273,6 +288,21 @@
                 </header>
                 <section class="modal-card-body">
                     <!-- Content ... -->
+                    <ul class="center">
+                        <li><b>•Nombre real:</b> Leonardo Roldán Escobar.</li>
+                        <li><b>•Instrumentos:</b>•Vocal, Guitarra, bajo.</li>
+                        <li><b>•Comida favorita:</b> Espaguetti rojo y pambazos.</li>
+                        <li><b>•Influencia musical:</b> Oasis, Zoé, Caifanes, Natalia Lafourcade, Marilyn Manson, Three Days and Grace.</li>
+                        <li><b>•Fan de:</b> Rock Alternativo, Hard Rock, Pop e Indie Pop.</li>
+                        <br>
+                        <p><b>Trascendencia musical:</b>
+                          <br>
+                          Desde los 10 años, empecé a relacionar y mezclar canciones conocidas. Y a partir de los 14 años, en 2012 compuse mis primeras canciones a capella de forma muy sencilla en el aspecto instrumental.
+Obtuve en 2014 mi primera guitarra acústica y aprendí a tocar con la ayuda del ahora cantante Omar Liro. Así plasmé mis ideas en mi guitarra para definir mi destino como un músico con mi primer álbum Mugre Fluorescente mientras conocía artistas con el pasar del tiempo, como Marlon Doker.
+<br>
+Debido a que no aprendí más que las bases de la guitarra, y que no sabía cómo mezclar cada instrumento en una composición formal, abandoné Mugre Fluorescente para empezar desde cero con el siguiente de mis proyectos: Relaciones Interpersonales. El cual, mientras lo avanzaba en [inserte el año en que Leo conoció a Zept], le pedí ayuda a “Dany Zept” para que me recibiera como integrante de su banda junto con “The Cosmic Dinodog” y así me pudieran apoyar en mi álbum de la misma forma en que yo actúo como intérprete y compositor en las canciones que juntamos para nuestro proyecto "Dr. Fausto Fénix".
+                        </p>
+                      </ul>
                 </section>
                 <footer class="modal-card-foot">
         
@@ -438,10 +468,14 @@
     function openModal(evt, modalName) {
         document.getElementById(modalName).style.display = "block";
         evt.currentTarget.className += " is-active";
+        
+        
     }
 
     function closeModal(evt, modalName) {
         document.getElementById(modalName).style.display = "none";
-        evt.currentTarget.className -= " is-active";        
+        evt.currentTarget.className -= " is-active";
+          
+           
     }
 </script>
