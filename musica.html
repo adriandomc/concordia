@@ -67,7 +67,22 @@
     <section class="section">
         <div class="container has-text-centered">
             <div class="img-container">
-                <iframe src="https://open.spotify.com/embed/album/1Akz4sEJJiM8RX1wBWegGs" width="100%" height="380" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                <h2 class="title">Escucha nuestro primer sencillo "Miss Payne".</h2>
+                <h3 class="subtitle">Reproductor del sitio web</h3>
+                <div id="audioplayer">
+                    <audio controls controlsList="nodownload" preload="auto">
+                        <source src="/assets/audio/misspaynewbpg.ogg" type="audio/ogg">
+                        <source src="/assets/audio/misspaynewbpg.mp3" type="audio/mpeg">
+                        Tu navegador no soporta este elemento de audio.
+                    </audio>
+                </div>
+                
+                <br>
+                <h3 class="subtitle">Spotify (inicia sesión en tu cuenta para escuchar la canción completa)</h3>
+                <div id="spotify-link">
+                    <iframe src="https://open.spotify.com/embed/album/1Akz4sEJJiM8RX1wBWegGs" width="70%" height="80" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                </div>
+                
             </div>    
         </div>
     </section>
@@ -133,4 +148,5 @@
         }
 
     });
+
 </script>
