@@ -1,4 +1,11 @@
 /* Atributos de body*/
 body {
   background-color: #FBF8D0;
+  padding: 20px 10%;
+}
+
+.flexcolumn {
+  display: flex;
+  flex-flow: column wrap;
+  align-content: center;
 }
