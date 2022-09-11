@@ -13,27 +13,32 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Gochi+Hand&amp;display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Leckerli+One&amp;display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Secular+One&amp;display=swap">
-    <link rel="stylesheet" href="assets/css/Navbar-Centered-Brand-Dark-icons.css">
     <link rel="stylesheet" href="assets/css/navbar.css">
-    <link rel="stylesheet" href="assets/css/Responsive-Active-Navbar.css">
 </head>
 
 <body style="font-family: Catamaran, sans-serif;font-size: 18px;padding-top: 0px;">
+    <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-dark navbar-custom autohide">
+        <div class="container"><a class="navbar-brand" href="#start">CONCORDIA</a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navbarResponsive"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#bio">BIOGRAFÍA</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#music">MÚSICA</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#shows">SHOWS</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">CONTACTO</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
     <header class="text-center text-white masthead" style="background: #FBF8D0;">
         <div class="masthead-content">
             <div class="container"><img src="assets/img/fondotransparente_azul.png" style="width: 50%;height: 50%;"></div>
         </div>
     </header>
-    <section style="background: #FBF8D0;"><a id='inicio' style="
-    display: block;
-    position: relative;
-    top: -180px;
-    visibility: hidden;
-"></a>
+    <section id="start" style="background: #FBF8D0;">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6 order-lg-2">
-                    <div class="p-5"><img class="rounded-circle img-fluid" src="assets/img/concordia1.jpg"></div>
+                    <div class="p-5"><img class="rounded-circle img-fluid" src="assets/img/concordia1.jpg" style="width: 95%;"></div>
                 </div>
                 <div class="col-lg-6 order-lg-1">
                     <div class="p-5">
@@ -44,12 +49,12 @@
             </div>
         </div>
     </section>
-    <section style="background: linear-gradient(#FBF8D0 0%, #719BBD);">
+    <section id="bio" style="background: linear-gradient(#FBF8D0 0%, #719BBD);">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6 order-lg-1">
                     <div class="p-5">
-                        <figure class="figure"><img class="figure-img" src="assets/img/concordia5.jpg" style="width: 100%;">
+                        <figure class="figure"><img class="figure-img" src="assets/img/concordia5.jpg" style="width: 85%;">
                             <figcaption class="figure-caption" style="font-style: italic;"><span style="color: rgb(0, 0, 0);">Alineación de Concordia, 2019.</span><br><span style="color: rgb(0, 0, 0);">De izquierda a derecha, Alfonso, Dany, Leo y Adrián.</span><br></figcaption>
                         </figure>
                     </div>
@@ -104,21 +109,11 @@
             </div>
         </div>
     </section>
-    <section style="background: #9197D9;"><a id='bio' style="
-    display: block;
-    position: relative;
-    top: -240px;
-    visibility: hidden;
-"></a>
+    <section id="music" style="background: #9197D9;">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col">
-                    <div class="p-5"><a id='music' style="
-    display: block;
-    position: relative;
-    top: -280px;
-    visibility: hidden;
-"></a>
+                    <div class="p-5">
                         <h2 class="display-4" style="font-size: 54px;font-family: 'Secular One', sans-serif;color: #594984;text-align: center;">MÚSICA</h2>
                     </div>
                 </div>
@@ -141,11 +136,51 @@
         <div class="container">
             <p class="text-center text-white m-0 small">Copyright&nbsp;© Concordia 2022</p>
         </div>
-    </footer>
+    </footer><script type="text/javascript">
+
+
+    document.addEventListener("DOMContentLoaded", function () {
+
+        const navLinks = document.querySelectorAll('.nav-item')
+        const menuToggle = document.getElementById('navbarResponsive')
+        const bsCollapse = new bootstrap.Collapse(menuToggle, { toggle: false })
+        navLinks.forEach((l) => {
+            l.addEventListener('click', () => { bsCollapse.toggle() })            
+        })
+
+
+        el_autohide = document.querySelector('.autohide');
+
+        // add padding-top to bady (if necessary)
+        //navbar_height = document.querySelector('.navbar').offsetHeight;
+        //document.body.style.paddingTop = navbar_height + 'px';
+
+        if (el_autohide) {
+            var last_scroll_top = 0;
+            window.addEventListener('scroll', function () {
+                let scroll_top = window.scrollY;
+                if (scroll_top < last_scroll_top) {
+                    el_autohide.classList.remove('scrolled-down');
+                    el_autohide.classList.add('scrolled-up');
+                }
+                else {
+                    el_autohide.classList.remove('scrolled-up');
+                    el_autohide.classList.add('scrolled-down');
+                }
+
+                last_scroll_top = scroll_top;
+            });
+            // window.addEventListener
+        }
+        // if
+
+    });
+    // DOMContentLoaded  end
+
+
+</script>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/js/navbar.js"></script>
-    <script src="assets/js/Responsive-Active-Navbar.js"></script>
 </body>
 
 </html>
